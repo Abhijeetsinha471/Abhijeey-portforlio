@@ -72,6 +72,30 @@ section{
     background: var(--green);
     letter-spacing: .2rem;
 }
+
+.btn > a >span{
+    position: relative;
+    width: 1.5rem;
+    visibility: hidden;
+
+} 
+.btn>a>span:after{
+    content: '\21D3';
+    font-size: 1.5rem;
+    position: absolute;
+    padding-left: 10px;
+    animation: down 1s linear infinite ;
+}
+@keyframes down{
+    from{
+        top: -10px;
+        opacity: 0;
+    }
+    to{
+        top: 10px;
+        opacity: 1;
+    }
+}
 header{
     position: fixed;
     top: 0;

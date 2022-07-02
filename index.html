@@ -67,13 +67,14 @@
                     <p><span>Mobile: </span> 9304153655 </p>
                     <p><span>Email:</span>sinhaabhijeet978@gmail.com</p>
                     <p><span>Github:</span>https://github.com/Abhijeetsinha471</p>
+                    <p><span>LinkedIn:</span>https://www.linkedin.com/in/abhijeet-sinha-987410162/</p>
                    <p><span>Address:</span> J.p lane Jagat Narayan Road,Kadamkuan,<br>
                     Patna,Bihar
                 </p>
                 </div>
-                
+              <!--Resume Download Button-->
             </div>
-            <a href="#" class="btn">Download Resume</a>
+            <a href="./images/Abhijeet_resume new (1).pdf" class="btn">MyResume<span></span></a>
             </div>
         </div>
          </section>
@@ -134,7 +135,7 @@
                 </div>
                 <div class="box tilt">
                     <i class="fa-solid fa-database"></i>
-                   <h3>MongoDb</h3>
+                   <h3>SQL</h3>
                    <p>Language used in Backend Part
                    </p>
                    
@@ -155,7 +156,25 @@
             <div class="box">
                 <img src="./images/pic4.png"/>
                 <div class="content">
-                    <a href="https://github.com/mdtabish803116/construct-Boat-Project" class="btn">Project-Link</a>
+                    <a href="https://github.com/mdtabish803116/construct-Boat-Project" target="_blank" class="btn">GitHub-Link</a>
+                    <a href="https://boat-lifestyle.netlify.app/" target="_blank" class="btn">Live-Project</a>
+
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/Prime-video.png"/>
+                <div class="content">
+                    <a href="https://github.com/icyflame21/Amazon-Prime-Clone" target="_blank" class="btn">GitHub-Link</a>
+                    <a href="https://amazonprime-clone.netlify.app/" target="_blank" class="btn">Live-Project</a>
+
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/Weather-app.png"/>
+                <div class="content">
+                    <a href="https://github.com/Abhijeetsinha471/weather_forecasting" target="_blank" class="btn">GitHub-Link</a>
+                    <a href="https://zingy-conkies-2d7ff9.netlify.app/" target="_blank" class="btn">Live-Project</a>
+
                 </div>
             </div>
         </div>
@@ -181,7 +200,7 @@
             </section>
             <!-- <contact sections ends> -->
 <!-- <footer star> -->
-    <div class="footer">created by <span>Abhijeet Sinha</span>all right reserved!</div>
+    <div class="footer">created by <span>Abhijeet Sinha</span>     all right reserved!</div>
 
 
     <!-- <footerend> -->
@@ -202,6 +221,17 @@
     <script>
         let menu = document.querySelector("#menu-bars");
         let header = document.querySelector("header");
+        let button = document.querySelector("a");
+        button.addEventListener("click",()=>{
+           const span = document.querySelector("a span");
+           button.style.paddingRight = "10px";
+           span.style.visibility = "visible";
+           setTimeout(()=>{
+            span.style.visibility = "hidden";
+            span.style.transition="1s ease-in-out";
+            span.style.paddingRight="0px";
+           },3000)
+        })
 
         menu.onclick = () => {
             menu.classList.toggle("fa-times");
